@@ -5,3 +5,5 @@
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
 
 .cap-static-scene{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;width:100%;padding:24px 0}.cap-static-scene>div{border:1px solid currentColor;border-color:color-mix(in srgb,currentColor 20%,transparent);padding:24px;min-height:110px}.cap-static-scene span{font:12px monospace;opacity:.55}.cap-static-scene p{font-size:clamp(18px,2.3vw,28px);line-height:1.2;margin-top:20px}.cap-language-links,.cap-footer-privacy{padding:16px 24px;text-align:center;font-size:14px;line-height:2}.cap-language-links a,.cap-footer-privacy a{text-decoration:underline;margin:0 5px}@media(max-width:540px){.cap-static-scene{gap:10px}.cap-static-scene>div{padding:16px}}
+/* Mobile omits the decorative video, so do not reserve an empty hero stage. */
+@media(max-width:767px){.hero>div:first-child{padding-top:64px}}
