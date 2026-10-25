@@ -1,0 +1,15 @@
+import assert from 'node:assert/strict';
+let handler;const env={WEBHOOK_SECRET:'test-secret',RESEND_API_KEY:'test-resend'};let sent=[];
+globalThis.Deno={env:{get:key=>env[key]},serve:fn=>handler=fn};
+globalThis.fetch=async(url,options)=>{sent.push(JSON.parse(options.body));return new Response('{}',{status:200});};
+await import('../supabase/functions/notificar-contacto/index.ts');
+const post=(body,secret='test-secret')=>handler(new Request('https://local.invalid',{method:'POST',headers:{'Content-Type':'application/json','x-webhook-secret':secret},body:JSON.stringify(body)}));
+assert.equal((await post({},'wrong')).status,401);
+env.WEBHOOK_SECRET='';assert.equal((await post({})).status,401);env.WEBHOOK_SECRET='test-secret';
+assert.equal((await post({table:'other',record:{}})).status,400);
+assert.equal((await post({record:{email:'x\r\n@test.com'}})).status,400);
+assert.equal((await post({record:{mensaje:'x'.repeat(140000)}})).status,413);
+assert.equal((await post({type:'UPDATE',record:{}})).status,200);assert.equal(sent.length,0);
+assert.equal((await post({type:'INSERT',table:'clientes_web',record:{nombre_contacto:'<script>x</script>',nombre_negocio:'Ficticia',email:'test@example.invalid',mensaje:'Prueba local',origen:'web'}})).status,200);
+assert.equal(sent.length,1);assert.ok(sent[0].html.includes('&lt;script&gt;'));assert.ok(!sent[0].html.includes('<script>'));
+console.log('Webhook checks passed: authentication fail-closed, bounded body, event and field validation, HTML escaping. Email provider mocked.');

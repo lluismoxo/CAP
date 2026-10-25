@@ -6,7 +6,7 @@ por email: un **Database Webhook** dispara una **Edge Function** que envía el
 correo con **Resend**.
 
 ```
-Formulario web  →  INSERT en clientes_web  →  Webhook  →  Edge Function  →  Resend  →  tu correo
+Formulario web  →  API de CAP (validación y cuotas)  →  INSERT en clientes_web  →  Webhook  →  Edge Function  →  Resend  →  tu correo
 ```
 
 El aviso va por detrás del guardado: si el email fallara, el contacto ya está
@@ -54,7 +54,7 @@ Supabase → **Edge Functions** → `notificar-contacto` → **Secrets**:
 | `RESEND_API_KEY` | `re_...` | obligatorio |
 | `AVISO_PARA` | `lluismoxo@gmail.com` | opcional, es el valor por defecto |
 | `AVISO_DESDE` | `avisos@capconsultor.eu` | opcional; sin dominio verificado, deja `onboarding@resend.dev` |
-| `WEBHOOK_SECRET` | una cadena larga al azar | recomendable, ver paso 4 |
+| `WEBHOOK_SECRET` | una cadena larga al azar | obligatorio, ver paso 4 |
 
 Para generar el secreto: `openssl rand -hex 24`
 
@@ -66,11 +66,10 @@ Supabase → **Database** → **Webhooks** → *Create a new hook*:
 - **Table:** `public.clientes_web`
 - **Events:** solo **Insert**
 - **Type:** *Supabase Edge Functions* → `notificar-contacto`
-- **HTTP Headers:** si has puesto `WEBHOOK_SECRET`, añade
+- **HTTP Headers:** añade obligatoriamente
   `x-webhook-secret` con ese mismo valor.
 
-Sin la cabecera, cualquiera que descubriera la URL de la función podría
-provocar envíos de correo. Con ella, la función rechaza esas peticiones.
+La función rechaza peticiones sin cabecera válida, incluso si falta la configuración del secreto. Verifica el secreto existente y la cabecera del webhook antes de desplegar. No publiques su valor.
 
 ### 5. Comprobar
 
@@ -79,7 +78,7 @@ Rellena el formulario en la web (o en local) y revisa:
 1. La fila aparece en `clientes_web`.
 2. Llega el email a `lluismoxo@gmail.com`.
 3. Supabase → Edge Functions → `notificar-contacto` → **Logs** muestra
-   `Aviso enviado a ...`.
+   `Aviso enviado`.
 
 Si no llega el correo, los logs dicen por qué. El más habitual es
 `dominio no verificado`: el remitente de `AVISO_DESDE` no está verificado en
@@ -97,3 +96,7 @@ Resend. Cámbialo a `onboarding@resend.dev` o verifica el dominio.
   el webhook una y otra vez. El fallo queda en los logs.
 - Si algún día amplías el webhook a UPDATE, la función ignora esos eventos: solo
   avisa de altas nuevas.
+
+## Auditoría 25-10-2026
+
+El código valida tamaño y tipos, limita el cuerpo a 128 KiB, escapa HTML, limita la llamada al proveedor a 10 segundos y no devuelve detalles internos. `node --experimental-strip-types tools/test-webhook.mjs` prueba el flujo con Resend simulado. La prueba en producción sin secreto debe responder 401 y no debe generar emails.

@@ -1,0 +1,530 @@
+{
+  "es": {
+    "privacy": [
+      "Política de privacidad",
+      "Actualizada el 25 de octubre de 2026. Esta información describe el tratamiento de datos en CAP Consultor, una iniciativa personal gratuita y sin empresa constituida.",
+      [
+        [
+          "Contacto de privacidad",
+          "La gestión del proyecto y de las consultas corresponde a su persona promotora. Puedes contactar en contact@capconsultor.eu o en el +34 669 802 256 para cualquier cuestión sobre tus datos."
+        ],
+        [
+          "Formulario de contacto",
+          "Recogemos nombre y email, y opcionalmente nombre del negocio y mensaje, para responder a la consulta que solicitas. La base es tu consentimiento (artículo 6.1.a del RGPD), que puedes retirar por email. Guardamos la fecha de consentimiento y la versión de esta política. No enviamos publicidad ni vendemos los datos."
+        ],
+        [
+          "Asistente de inteligencia artificial",
+          "El chat es opcional y se activa desde las preferencias. Los mensajes y el historial de la sesión se envían a OpenAI para generar respuestas. CAP no guarda las nuevas conversaciones ni extrae contactos automáticamente. El historial visible se pierde al recargar o desactivar el asistente. No compartas datos sensibles, contraseñas ni información confidencial. Las respuestas pueden contener errores y no sustituyen asesoramiento profesional."
+        ],
+        [
+          "Seguridad y datos técnicos",
+          "Vercel y los proveedores de infraestructura reciben datos técnicos necesarios para servir la web, como IP y registros de conexión. Para prevenir abuso usamos contadores temporales asociados a identificadores derivados mediante HMAC, sin guardar la IP en esos contadores; caducan en un máximo de 24 horas. Esta prevención se basa en el interés legítimo en proteger el servicio (artículo 6.1.f del RGPD)."
+        ],
+        [
+          "Proveedores y transferencias",
+          "Intervienen Vercel (alojamiento), Supabase (base de datos del formulario en Irlanda), el proveedor de correo usado para gestionar las consultas y OpenAI cuando utilizas el chat. Los avisos de contacto pueden pasar por Resend según la configuración de correo. Algunos proveedores pueden tratar datos fuera del Espacio Económico Europeo; no se garantiza que todo el tratamiento permanezca en la UE. Deben aplicarse las garantías correspondientes del RGPD, como decisiones de adecuación o cláusulas contractuales tipo, según el proveedor."
+        ],
+        [
+          "Conservación",
+          "Las consultas se conservan mientras se gestionan y, como máximo, 24 meses desde el último contacto, salvo obligación legal de conservación o necesidad de atender una reclamación. Los datos históricos recibidos antes de esta actualización siguen sujetos a los derechos indicados aquí. Puedes solicitar su supresión. OpenAI y los proveedores de infraestructura aplican además sus propios plazos técnicos conforme a sus condiciones de tratamiento."
+        ],
+        [
+          "Tus derechos",
+          "Puedes solicitar acceso, rectificación, supresión, limitación, oposición y portabilidad cuando proceda, y retirar el consentimiento, escribiendo a contact@capconsultor.eu. La retirada no afecta al tratamiento previo. No tomamos decisiones con efectos jurídicos basadas exclusivamente en procesos automatizados. Puedes reclamar ante la Agencia Española de Protección de Datos (aepd.es)."
+        ],
+        [
+          "Menores y almacenamiento local",
+          "El sitio está dirigido a personas adultas. No solicites atención mediante el formulario o el chat si eres menor de 14 años. La política de cookies detalla el almacenamiento local y cómo cambiar tu decisión."
+        ]
+      ]
+    ],
+    "legal": [
+      "Aviso legal",
+      "CAP Consultor es el nombre de una iniciativa personal sin ánimo de lucro, actualmente gratuita y sin sociedad o empresa constituida.",
+      [
+        [
+          "Finalidad y ámbito",
+          "Presentamos propuestas de consultoría general con especialización tecnológica para pymes, pequeños negocios y startups. El proyecto se desarrolla desde Barcelona y atiende consultas de España y otros países. No somos una asociación ni una fundación registrada y no atribuimos al proyecto una personalidad jurídica propia."
+        ],
+        [
+          "Contacto",
+          "Correo: contact@capconsultor.eu. Teléfono: +34 669 802 256. La web no permite compras, pagos, suscripciones ni contratación automática. Cualquier colaboración se concreta directamente antes de iniciarse."
+        ],
+        [
+          "Uso del sitio",
+          "El acceso es gratuito. Utiliza la web de forma lícita y no intentes acceder a datos ajenos, enviar spam ni interrumpir el servicio. Facilita únicamente datos propios o que estés autorizado a compartir."
+        ],
+        [
+          "Contenido y responsabilidad",
+          "Los casos y resultados publicados corresponden a experiencias concretas y no garantizan resultados futuros. La información es orientativa y puede actualizarse. El asistente es una IA, puede equivocarse y no sustituye una revisión humana. Los enlaces externos tienen sus propias condiciones. No se excluyen derechos o responsabilidades que la ley declare irrenunciables."
+        ],
+        [
+          "Privacidad y normativa",
+          "Consulta las políticas de privacidad y cookies para conocer el tratamiento de datos. Se aplica la legislación española y europea que corresponda, incluido el RGPD y la LOPDGDD. Las controversias se someten a los órganos competentes conforme a la normativa aplicable."
+        ]
+      ]
+    ],
+    "cookies": [
+      "Cookies y almacenamiento local",
+      "No usamos cookies de publicidad, analítica ni seguimiento. Google Search Console verifica el sitio y no requiere instalar una cookie de seguimiento en tu navegador.",
+      [
+        [
+          "Almacenamiento necesario",
+          "La clave local cap-consent-v1 guarda tu elección de privacidad y su fecha durante un máximo de 180 días. Es almacenamiento del navegador, no una cookie publicitaria. No contiene tu nombre ni email. La versión anterior podía guardar cap-lang para recordar el idioma; ya no se utiliza: el idioma está en la URL."
+        ],
+        [
+          "Asistente opcional",
+          "Si permites el asistente, el chat solo se carga cuando pulsas su botón. Se conecta con Vercel y, al enviar mensajes, con OpenAI a través del servidor. No guardamos el historial nuevo en almacenamiento persistente del navegador ni en la base de datos de CAP. No se carga el chat cuando lo rechazas."
+        ],
+        [
+          "Cómo decidir o retirar el permiso",
+          "Puedes aceptar o rechazar desde el panel inicial, sin bloquear el resto de la web. Configurar permite decidir sobre el asistente. El botón permanente «Cookies y privacidad» permite revisar tu elección y retirar el permiso; al desactivar el asistente se cierra y se descarta la sesión visible."
+        ],
+        [
+          "Más información",
+          "El navegador también permite borrar el almacenamiento del sitio, lo que hará que vuelva a aparecer el panel. Para información sobre proveedores, derechos y transferencias, consulta la política de privacidad o escribe a contact@capconsultor.eu."
+        ]
+      ]
+    ]
+  },
+  "en": {
+    "privacy": [
+      "Privacy policy",
+      "Updated 25 October 2026. This explains data processing at CAP Consultor, a free personal initiative with no incorporated company.",
+      [
+        [
+          "Privacy contact",
+          "The person running the project manages enquiries. Contact contact@capconsultor.eu or +34 669 802 256 about your personal data."
+        ],
+        [
+          "Contact form",
+          "We collect your name and email and optionally your business name and message to answer your enquiry. Processing relies on consent (GDPR Article 6(1)(a)), which you can withdraw by email. We record the consent date and policy version. We do not send advertising or sell your data."
+        ],
+        [
+          "AI assistant",
+          "The optional chat is enabled through preferences. Your messages and session history are sent to OpenAI to generate answers. CAP does not save new conversations or automatically extract contacts. The visible history disappears on reload or when the assistant is disabled. Do not share sensitive data, passwords or confidential information. Answers may be wrong and do not replace professional advice."
+        ],
+        [
+          "Technical data and security",
+          "Vercel and infrastructure providers receive technical data such as IP addresses and connection logs. To prevent abuse, temporary counters use HMAC-derived identifiers rather than storing IP addresses in the counters. They expire within 24 hours. This relies on our legitimate interest in protecting the service (GDPR Article 6(1)(f))."
+        ],
+        [
+          "Providers and international transfers",
+          "Providers include Vercel (hosting), Supabase (contact database in Ireland), the email provider used to handle enquiries and OpenAI when you use the chat. Contact notifications may use Resend depending on email configuration. Some providers may process data outside the EEA; processing is not guaranteed to remain entirely in the EU. Applicable GDPR safeguards, including adequacy decisions or standard contractual clauses, must apply as appropriate."
+        ],
+        [
+          "Retention",
+          "Enquiries are retained while being handled, for up to 24 months after the last contact, unless legal obligations or claims require longer retention. Historical records remain subject to your rights and you may request deletion. OpenAI and infrastructure providers also apply their own technical retention periods under their data-processing terms."
+        ],
+        [
+          "Your rights",
+          "Email contact@capconsultor.eu to request access, correction, deletion, restriction, objection or portability where applicable, or withdraw consent. Withdrawal does not affect earlier processing. We do not make decisions with legal effects solely through automated processing. You may complain to the Spanish Data Protection Agency (aepd.es)."
+        ],
+        [
+          "Children and local storage",
+          "This website is intended for adults. Do not use the form or chat if you are under 14. The cookie policy explains local storage and how to change your choice."
+        ]
+      ]
+    ],
+    "legal": [
+      "Legal notice",
+      "CAP Consultor is a free, non-profit personal initiative. It is not an incorporated company.",
+      [
+        [
+          "Purpose and coverage",
+          "We present general consulting with a technology specialisation for small businesses and startups. Based in Barcelona, the project handles enquiries from Spain and other countries. It is not a registered association or foundation and has no separate legal personality."
+        ],
+        [
+          "Contact",
+          "Email: contact@capconsultor.eu. Phone: +34 669 802 256. The website offers no purchases, payments, subscriptions or automatic contracting. Any collaboration is discussed directly before it begins."
+        ],
+        [
+          "Website use",
+          "Access is free. Use the website lawfully; do not access other people’s data, send spam or disrupt the service. Share only your own data or data you are authorised to provide."
+        ],
+        [
+          "Content and responsibility",
+          "Published cases and results refer to specific experiences and do not guarantee future outcomes. Information is indicative and may change. The AI assistant may make mistakes and does not replace human review. External links have their own terms. Mandatory legal rights and liabilities are not excluded."
+        ],
+        [
+          "Privacy and applicable law",
+          "See the privacy and cookie policies for data processing details. Applicable Spanish and European legislation, including the GDPR and Spanish data protection law, applies. Disputes are handled by the competent courts under applicable law."
+        ]
+      ]
+    ],
+    "cookies": [
+      "Cookies and local storage",
+      "We use no advertising, analytics or tracking cookies. Google Search Console verifies the site without requiring a tracking cookie in your browser.",
+      [
+        [
+          "Necessary storage",
+          "The local key cap-consent-v1 stores your privacy choice and its date for up to 180 days. This is browser storage, not an advertising cookie, and contains no name or email. The previous cap-lang language preference is no longer used: the URL determines the language."
+        ],
+        [
+          "Optional assistant",
+          "If permitted, the chat loads only when you press its button. It connects to Vercel and, when you send messages, to OpenAI through the server. CAP does not persist new chat history in browser storage or its database. Rejection prevents the chat from loading."
+        ],
+        [
+          "Choosing and withdrawing permission",
+          "Accept or reject in the initial panel without blocking the rest of the site. Configure lets you choose whether to enable the assistant. The permanent “Cookies and privacy” button lets you change your choice. Disabling the assistant closes it and discards the visible session."
+        ],
+        [
+          "Further information",
+          "You can also clear site storage in your browser, which makes the panel appear again. For providers, rights and transfers, see the privacy policy or contact contact@capconsultor.eu."
+        ]
+      ]
+    ]
+  },
+  "fr": {
+    "privacy": [
+      "Politique de confidentialité",
+      "Mise à jour le 25 octobre 2026. CAP Consultor est une initiative personnelle gratuite sans société constituée.",
+      [
+        [
+          "Contact",
+          "La personne à l’origine du projet gère les demandes. Pour vos données personnelles : contact@capconsultor.eu ou +34 669 802 256."
+        ],
+        [
+          "Formulaire",
+          "Nous recueillons votre nom et email, et facultativement le nom de votre activité et votre message, afin de répondre à votre demande. La base est votre consentement (article 6.1.a du RGPD), révocable par email. Nous enregistrons sa date et la version de cette politique. Ni publicité ni vente de données."
+        ],
+        [
+          "Assistant IA",
+          "Le chat est facultatif et activé dans les préférences. Les messages et l’historique de la session sont envoyés à OpenAI pour répondre. CAP ne conserve pas les nouvelles conversations et n’en extrait pas automatiquement des contacts. L’historique visible disparaît au rechargement ou à la désactivation. Ne transmettez aucune donnée sensible, aucun mot de passe ni information confidentielle. Les réponses peuvent être erronées et ne remplacent pas un conseil professionnel."
+        ],
+        [
+          "Sécurité et données techniques",
+          "Vercel et les fournisseurs techniques reçoivent notamment l’IP et les journaux de connexion. Les compteurs anti-abus utilisent des identifiants dérivés par HMAC, sans conserver l’IP dans les compteurs, et expirent sous 24 heures. La base est l’intérêt légitime à protéger le service (article 6.1.f du RGPD)."
+        ],
+        [
+          "Prestataires et transferts",
+          "Vercel héberge le site, Supabase conserve les demandes en Irlande, le fournisseur de messagerie traite les échanges et OpenAI intervient pour le chat. Les notifications peuvent passer par Resend selon la configuration. Certains traitements peuvent avoir lieu hors EEE ; ils ne sont pas garantis exclusivement dans l’UE. Les garanties applicables du RGPD, dont les décisions d’adéquation ou les clauses contractuelles types, doivent être respectées selon le prestataire."
+        ],
+        [
+          "Conservation",
+          "Les demandes sont conservées pendant leur traitement, au maximum 24 mois après le dernier contact, sauf obligation légale ou réclamation. Les données historiques restent soumises à vos droits ; vous pouvez demander leur suppression. OpenAI et les prestataires techniques appliquent aussi leurs propres durées techniques selon leurs conditions de traitement."
+        ],
+        [
+          "Vos droits",
+          "Écrivez à contact@capconsultor.eu pour demander accès, rectification, suppression, limitation, opposition, portabilité lorsque applicable, ou retrait du consentement. Le retrait ne remet pas en cause le traitement antérieur. Aucune décision à effets juridiques ne repose uniquement sur un traitement automatisé. Vous pouvez saisir l’Agence espagnole de protection des données (aepd.es)."
+        ],
+        [
+          "Mineurs et stockage local",
+          "Le site s’adresse aux adultes. N’utilisez pas le formulaire ou le chat avant 14 ans. La politique de cookies explique le stockage local et la modification de vos choix."
+        ]
+      ]
+    ],
+    "legal": [
+      "Mentions légales",
+      "CAP Consultor désigne une initiative personnelle gratuite, sans but lucratif et sans société constituée.",
+      [
+        [
+          "Objet et couverture",
+          "Nous présentons du conseil général spécialisé en technologie pour PME et startups. Depuis Barcelone, le projet traite des demandes d’Espagne et d’autres pays. Ce n’est ni une association ni une fondation enregistrée ; il n’a pas de personnalité juridique distincte."
+        ],
+        [
+          "Contact",
+          "contact@capconsultor.eu · +34 669 802 256. Le site ne propose ni achat, ni paiement, ni abonnement, ni contrat automatique. Toute collaboration est discutée directement avant son démarrage."
+        ],
+        [
+          "Utilisation",
+          "L’accès est gratuit. Utilisez le site légalement, sans accéder aux données d’autrui, envoyer du spam ou perturber le service. Ne partagez que vos données ou celles que vous êtes autorisé à fournir."
+        ],
+        [
+          "Contenu et responsabilité",
+          "Les cas et résultats publiés concernent des expériences précises et ne garantissent pas de résultats futurs. Les informations sont indicatives. L’IA peut se tromper et ne remplace pas la vérification humaine. Les liens externes ont leurs propres conditions. Les droits et responsabilités impératifs ne sont pas exclus."
+        ],
+        [
+          "Vie privée et droit applicable",
+          "Consultez les politiques de confidentialité et de cookies. La législation espagnole et européenne applicable, notamment le RGPD et la loi espagnole de protection des données, s’applique. Les litiges relèvent des juridictions compétentes selon la loi."
+        ]
+      ]
+    ],
+    "cookies": [
+      "Cookies et stockage local",
+      "Nous n’utilisons aucun cookie publicitaire, analytique ou de suivi. Google Search Console vérifie le site sans nécessiter de cookie de suivi dans votre navigateur.",
+      [
+        [
+          "Stockage nécessaire",
+          "La clé locale cap-consent-v1 conserve votre choix de confidentialité et sa date pendant 180 jours au maximum. Ce stockage ne contient ni nom ni email. L’ancienne préférence cap-lang n’est plus utilisée : la langue dépend de l’URL."
+        ],
+        [
+          "Assistant facultatif",
+          "Avec votre accord, le chat ne se charge que lorsque vous cliquez sur son bouton. Il se connecte à Vercel puis, à l’envoi de messages, à OpenAI via le serveur. CAP ne conserve pas le nouvel historique dans le stockage persistant du navigateur ou sa base de données. En cas de refus, le chat ne se charge pas."
+        ],
+        [
+          "Choix et retrait",
+          "Acceptez ou refusez dans le panneau initial sans bloquer le site. Configurer permet de choisir l’assistant. Le bouton permanent « Cookies et confidentialité » permet de changer d’avis. La désactivation ferme le chat et efface la session visible."
+        ],
+        [
+          "Informations",
+          "Effacer le stockage du site dans votre navigateur fait réapparaître le panneau. Pour les prestataires, droits et transferts, consultez la politique de confidentialité ou contact@capconsultor.eu."
+        ]
+      ]
+    ]
+  },
+  "it": {
+    "privacy": [
+      "Informativa sulla privacy",
+      "Aggiornata il 25 ottobre 2026. CAP Consultor è un’iniziativa personale gratuita senza società costituita.",
+      [
+        [
+          "Contatto",
+          "La persona promotrice del progetto gestisce le richieste. Per i tuoi dati personali: contact@capconsultor.eu o +34 669 802 256."
+        ],
+        [
+          "Modulo",
+          "Raccogliamo nome ed email e, facoltativamente, attività e messaggio per rispondere alla richiesta. La base è il consenso (articolo 6.1.a GDPR), revocabile via email. Registriamo data e versione dell’informativa. Non inviamo pubblicità né vendiamo dati."
+        ],
+        [
+          "Assistente IA",
+          "La chat è facoltativa e si attiva nelle preferenze. Messaggi e cronologia della sessione vengono inviati a OpenAI per rispondere. CAP non salva le nuove conversazioni né estrae contatti automaticamente. La cronologia visibile scompare ricaricando o disattivando l’assistente. Non condividere dati sensibili, password o informazioni riservate. Le risposte possono essere errate e non sostituiscono la consulenza professionale."
+        ],
+        [
+          "Sicurezza e dati tecnici",
+          "Vercel e i fornitori tecnici ricevono dati come IP e registri di connessione. I contatori antiabuso usano identificativi derivati tramite HMAC, senza memorizzare l’IP nei contatori, e scadono entro 24 ore. La base è il legittimo interesse a proteggere il servizio (articolo 6.1.f GDPR)."
+        ],
+        [
+          "Fornitori e trasferimenti",
+          "Intervengono Vercel per l’hosting, Supabase per il database delle richieste in Irlanda, il fornitore email per le comunicazioni e OpenAI per la chat. Le notifiche possono passare da Resend secondo la configurazione. Alcuni fornitori possono trattare dati fuori dallo SEE: non è garantita la permanenza esclusiva nell’UE. Devono applicarsi le garanzie GDPR pertinenti, come decisioni di adeguatezza o clausole contrattuali standard."
+        ],
+        [
+          "Conservazione",
+          "Le richieste sono conservate durante la gestione, per un massimo di 24 mesi dall’ultimo contatto, salvo obblighi legali o reclami. I dati storici restano soggetti ai tuoi diritti e puoi chiederne la cancellazione. OpenAI e i fornitori tecnici applicano anche i propri tempi tecnici secondo le condizioni di trattamento."
+        ],
+        [
+          "Diritti",
+          "Scrivi a contact@capconsultor.eu per accesso, rettifica, cancellazione, limitazione, opposizione, portabilità ove applicabile o revoca del consenso. La revoca non influisce sui trattamenti precedenti. Non prendiamo decisioni con effetti giuridici esclusivamente automatizzate. Puoi reclamare all’Agenzia spagnola per la protezione dei dati (aepd.es)."
+        ],
+        [
+          "Minori e memoria locale",
+          "Il sito è rivolto ad adulti. Non usare il modulo o la chat se hai meno di 14 anni. L’informativa sui cookie descrive la memoria locale e come cambiare scelta."
+        ]
+      ]
+    ],
+    "legal": [
+      "Note legali",
+      "CAP Consultor è il nome di un’iniziativa personale gratuita e senza scopo di lucro, senza società costituita.",
+      [
+        [
+          "Finalità e ambito",
+          "Presentiamo consulenza generale con specializzazione tecnologica per piccole imprese e startup. Da Barcellona rispondiamo a richieste dalla Spagna e da altri paesi. Non siamo un’associazione o fondazione registrata e non abbiamo personalità giuridica separata."
+        ],
+        [
+          "Contatto",
+          "contact@capconsultor.eu · +34 669 802 256. Il sito non offre acquisti, pagamenti, abbonamenti o contratti automatici. Ogni collaborazione viene concordata direttamente prima dell’avvio."
+        ],
+        [
+          "Uso",
+          "L’accesso è gratuito. Usa il sito legalmente, senza accedere a dati altrui, inviare spam o interrompere il servizio. Condividi solo dati tuoi o che sei autorizzato a fornire."
+        ],
+        [
+          "Contenuto e responsabilità",
+          "Casi e risultati pubblicati riguardano esperienze specifiche e non garantiscono risultati futuri. Le informazioni sono indicative. L’IA può sbagliare e non sostituisce la revisione umana. I siti esterni hanno condizioni proprie. Non sono esclusi diritti o responsabilità inderogabili."
+        ],
+        [
+          "Privacy e legge",
+          "Consulta le informative su privacy e cookie. Si applicano le norme spagnole ed europee pertinenti, incluso il GDPR e la normativa spagnola sulla protezione dei dati. Le controversie spettano agli organi competenti secondo la legge."
+        ]
+      ]
+    ],
+    "cookies": [
+      "Cookie e memoria locale",
+      "Non usiamo cookie pubblicitari, di analisi o tracciamento. Google Search Console verifica il sito senza richiedere cookie di tracciamento nel browser.",
+      [
+        [
+          "Memoria necessaria",
+          "La chiave locale cap-consent-v1 salva scelta e data per un massimo di 180 giorni, senza nome o email. È memoria del browser, non un cookie pubblicitario. La vecchia preferenza cap-lang non è più usata: la lingua dipende dall’URL."
+        ],
+        [
+          "Assistente facoltativo",
+          "Se autorizzata, la chat si carica solo quando premi il pulsante. Si collega a Vercel e, quando invii messaggi, a OpenAI attraverso il server. CAP non conserva la nuova cronologia nella memoria persistente del browser o nel database. Se rifiuti, la chat non si carica."
+        ],
+        [
+          "Scelta e revoca",
+          "Puoi accettare o rifiutare nel pannello iniziale senza bloccare il sito. Configura permette di scegliere l’assistente. Il pulsante permanente « Cookie e privacy » permette di cambiare scelta. Disattivando l’assistente si chiude la chat e si elimina la sessione visibile."
+        ],
+        [
+          "Informazioni",
+          "Cancellare la memoria del sito nel browser fa riapparire il pannello. Per fornitori, diritti e trasferimenti consulta la privacy o scrivi a contact@capconsultor.eu."
+        ]
+      ]
+    ]
+  },
+  "de": {
+    "privacy": [
+      "Datenschutzerklärung",
+      "Stand: 25. Oktober 2026. CAP Consultor ist eine kostenlose persönliche Initiative ohne gegründetes Unternehmen.",
+      [
+        [
+          "Kontakt",
+          "Die Person hinter dem Projekt bearbeitet Anfragen. Kontakt für Datenschutz: contact@capconsultor.eu oder +34 669 802 256."
+        ],
+        [
+          "Kontaktformular",
+          "Wir erfassen Name und E-Mail sowie optional Unternehmensname und Nachricht zur Beantwortung Ihrer Anfrage. Grundlage ist Ihre Einwilligung (Art. 6 Abs. 1 a DSGVO), die Sie per E-Mail widerrufen können. Datum und Version dieser Erklärung werden gespeichert. Wir versenden keine Werbung und verkaufen keine Daten."
+        ],
+        [
+          "KI-Assistent",
+          "Der optionale Chat wird in den Einstellungen aktiviert. Nachrichten und Sitzungsverlauf werden zur Beantwortung an OpenAI gesendet. CAP speichert neue Gespräche nicht und extrahiert keine Kontakte automatisch. Der sichtbare Verlauf verschwindet beim Neuladen oder Deaktivieren. Teilen Sie keine sensiblen Daten, Passwörter oder vertraulichen Informationen. Antworten können falsch sein und ersetzen keine professionelle Beratung."
+        ],
+        [
+          "Sicherheit und technische Daten",
+          "Vercel und Infrastrukturanbieter erhalten technische Daten wie IP-Adressen und Verbindungsprotokolle. Missbrauchszähler verwenden HMAC-abgeleitete Kennungen, speichern darin keine IP-Adressen und verfallen innerhalb von 24 Stunden. Grundlage ist das berechtigte Interesse am Schutz des Dienstes (Art. 6 Abs. 1 f DSGVO)."
+        ],
+        [
+          "Anbieter und Übermittlungen",
+          "Vercel hostet die Website, Supabase speichert Kontaktanfragen in Irland, der E-Mail-Anbieter verarbeitet die Korrespondenz und OpenAI den Chat. Benachrichtigungen können je nach Konfiguration über Resend erfolgen. Einige Anbieter können Daten außerhalb des EWR verarbeiten; eine ausschließlich europäische Verarbeitung ist nicht garantiert. Je nach Anbieter müssen angemessene DSGVO-Garantien wie Angemessenheitsbeschlüsse oder Standardvertragsklauseln gelten."
+        ],
+        [
+          "Speicherdauer",
+          "Anfragen werden während der Bearbeitung und höchstens 24 Monate nach dem letzten Kontakt gespeichert, soweit keine gesetzliche Pflicht oder Rechtsansprüche längere Aufbewahrung erfordern. Historische Daten unterliegen weiterhin Ihren Rechten; Sie können ihre Löschung verlangen. OpenAI und Infrastrukturanbieter wenden zusätzlich ihre technischen Aufbewahrungsfristen gemäß ihren Bedingungen an."
+        ],
+        [
+          "Ihre Rechte",
+          "Für Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch, gegebenenfalls Datenübertragbarkeit oder Widerruf schreiben Sie an contact@capconsultor.eu. Der Widerruf berührt die bisherige Verarbeitung nicht. Wir treffen keine rechtlich wirksamen Entscheidungen allein automatisiert. Beschwerden sind bei der spanischen Datenschutzbehörde möglich (aepd.es)."
+        ],
+        [
+          "Minderjährige und lokaler Speicher",
+          "Die Website richtet sich an Erwachsene. Unter 14 Jahren dürfen Formular und Chat nicht genutzt werden. Die Cookie-Richtlinie erklärt den lokalen Speicher und Ihre Auswahlmöglichkeiten."
+        ]
+      ]
+    ],
+    "legal": [
+      "Rechtliche Hinweise",
+      "CAP Consultor bezeichnet eine kostenlose persönliche Initiative ohne Gewinnerzielungsabsicht und ohne gegründetes Unternehmen.",
+      [
+        [
+          "Zweck und Reichweite",
+          "Wir stellen allgemeine Beratung mit technologischem Schwerpunkt für kleine Unternehmen und Startups vor. Das Projekt arbeitet von Barcelona aus für Spanien und andere Länder. Es ist kein eingetragener Verein oder eine Stiftung und besitzt keine eigene Rechtspersönlichkeit."
+        ],
+        [
+          "Kontakt",
+          "contact@capconsultor.eu · +34 669 802 256. Die Website ermöglicht keine Käufe, Zahlungen, Abonnements oder automatischen Vertragsabschlüsse. Jede Zusammenarbeit wird vorab direkt besprochen."
+        ],
+        [
+          "Nutzung",
+          "Der Zugang ist kostenlos. Nutzen Sie die Website rechtmäßig, ohne fremde Daten abzurufen, Spam zu versenden oder den Dienst zu stören. Teilen Sie nur eigene oder berechtigt übermittelte Daten."
+        ],
+        [
+          "Inhalte und Verantwortung",
+          "Veröffentlichte Fälle und Ergebnisse betreffen konkrete Erfahrungen und garantieren keine künftigen Ergebnisse. Informationen dienen der Orientierung. Die KI kann Fehler machen und ersetzt keine menschliche Prüfung. Externe Links haben eigene Bedingungen. Zwingende gesetzliche Rechte und Haftung bleiben unberührt."
+        ],
+        [
+          "Datenschutz und Recht",
+          "Datenschutz- und Cookie-Richtlinien erläutern die Verarbeitung. Es gelten die einschlägigen spanischen und europäischen Vorschriften einschließlich DSGVO und spanischem Datenschutzrecht. Streitigkeiten behandeln die gesetzlich zuständigen Gerichte."
+        ]
+      ]
+    ],
+    "cookies": [
+      "Cookies und lokaler Speicher",
+      "Wir verwenden keine Werbe-, Analyse- oder Tracking-Cookies. Google Search Console überprüft die Website ohne ein Tracking-Cookie im Browser.",
+      [
+        [
+          "Notwendiger Speicher",
+          "Der lokale Schlüssel cap-consent-v1 speichert Ihre Auswahl und das Datum für höchstens 180 Tage, ohne Name oder E-Mail. Es handelt sich um Browserspeicher, nicht um ein Werbe-Cookie. Die frühere Auswahl cap-lang wird nicht mehr verwendet: Die URL bestimmt die Sprache."
+        ],
+        [
+          "Optionaler Assistent",
+          "Mit Erlaubnis lädt der Chat erst nach Klick auf seine Schaltfläche. Er verbindet sich mit Vercel und beim Senden mit OpenAI über den Server. CAP speichert neue Verläufe weder dauerhaft im Browser noch in seiner Datenbank. Bei Ablehnung wird der Chat nicht geladen."
+        ],
+        [
+          "Auswahl und Widerruf",
+          "Akzeptieren oder ablehnen ist direkt im ersten Fenster möglich, ohne die Website zu blockieren. Einstellungen betreffen den Assistenten. Über „Cookies und Datenschutz“ können Sie jederzeit ändern. Deaktivieren schließt den Chat und verwirft den sichtbaren Verlauf."
+        ],
+        [
+          "Weitere Informationen",
+          "Wenn Sie den Websitespeicher im Browser löschen, erscheint das Fenster erneut. Anbieter, Rechte und Übermittlungen finden Sie in der Datenschutzerklärung oder per Anfrage an contact@capconsultor.eu."
+        ]
+      ]
+    ]
+  },
+  "pt": {
+    "privacy": [
+      "Política de privacidade",
+      "Atualizada em 25 de outubro de 2026. A CAP Consultor é uma iniciativa pessoal gratuita, sem empresa constituída.",
+      [
+        [
+          "Contacto",
+          "A pessoa promotora do projeto gere as consultas. Para assuntos sobre os seus dados: contact@capconsultor.eu ou +34 669 802 256."
+        ],
+        [
+          "Formulário",
+          "Recolhemos nome e email e, opcionalmente, nome do negócio e mensagem para responder à consulta. A base é o consentimento (artigo 6.1.a do RGPD), que pode retirar por email. Guardamos a data e a versão desta política. Não enviamos publicidade nem vendemos dados."
+        ],
+        [
+          "Assistente de IA",
+          "O chat é opcional e ativa-se nas preferências. As mensagens e o histórico da sessão são enviados à OpenAI para responder. A CAP não guarda novas conversas nem extrai contactos automaticamente. O histórico visível desaparece ao recarregar ou desativar o assistente. Não partilhe dados sensíveis, palavras-passe ou informação confidencial. As respostas podem conter erros e não substituem aconselhamento profissional."
+        ],
+        [
+          "Segurança e dados técnicos",
+          "A Vercel e os fornecedores de infraestrutura recebem dados técnicos como IP e registos de ligação. Os contadores contra abuso usam identificadores derivados por HMAC, sem guardar o IP nos contadores, e expiram em até 24 horas. A base é o interesse legítimo em proteger o serviço (artigo 6.1.f do RGPD)."
+        ],
+        [
+          "Fornecedores e transferências",
+          "Intervêm a Vercel no alojamento, a Supabase na base de dados de consultas na Irlanda, o fornecedor de email e a OpenAI no chat. Os avisos podem passar pela Resend consoante a configuração. Alguns fornecedores podem tratar dados fora do EEE; não se garante tratamento exclusivamente na UE. Devem aplicar-se as garantias pertinentes do RGPD, como decisões de adequação ou cláusulas contratuais-tipo."
+        ],
+        [
+          "Conservação",
+          "As consultas são conservadas enquanto são tratadas, até 24 meses após o último contacto, salvo obrigação legal ou reclamação. Os dados históricos continuam sujeitos aos seus direitos; pode pedir a eliminação. A OpenAI e os fornecedores técnicos também aplicam os seus prazos técnicos segundo as condições de tratamento."
+        ],
+        [
+          "Os seus direitos",
+          "Escreva para contact@capconsultor.eu para acesso, retificação, eliminação, limitação, oposição, portabilidade quando aplicável ou retirada do consentimento. A retirada não afeta o tratamento anterior. Não tomamos decisões com efeitos jurídicos exclusivamente automatizadas. Pode reclamar à Agência Espanhola de Proteção de Dados (aepd.es)."
+        ],
+        [
+          "Menores e armazenamento local",
+          "O site destina-se a adultos. Não use o formulário ou o chat se tiver menos de 14 anos. A política de cookies explica o armazenamento local e como alterar a escolha."
+        ]
+      ]
+    ],
+    "legal": [
+      "Aviso legal",
+      "A CAP Consultor é uma iniciativa pessoal gratuita, sem fins lucrativos e sem empresa constituída.",
+      [
+        [
+          "Finalidade e âmbito",
+          "Apresentamos consultoria geral com especialização tecnológica para pequenas empresas e startups. A partir de Barcelona atendemos consultas de Espanha e de outros países. Não somos associação ou fundação registada e não temos personalidade jurídica própria."
+        ],
+        [
+          "Contacto",
+          "contact@capconsultor.eu · +34 669 802 256. O site não permite compras, pagamentos, subscrições ou contratação automática. Qualquer colaboração é acordada diretamente antes de começar."
+        ],
+        [
+          "Utilização",
+          "O acesso é gratuito. Use o site legalmente, sem aceder a dados alheios, enviar spam ou interromper o serviço. Partilhe apenas dados seus ou que esteja autorizado a fornecer."
+        ],
+        [
+          "Conteúdo e responsabilidade",
+          "Os casos e resultados publicados dizem respeito a experiências concretas e não garantem resultados futuros. A informação é indicativa. A IA pode errar e não substitui revisão humana. Os links externos têm condições próprias. Não se excluem direitos ou responsabilidades legais irrenunciáveis."
+        ],
+        [
+          "Privacidade e lei",
+          "Consulte as políticas de privacidade e cookies. Aplica-se a legislação espanhola e europeia pertinente, incluindo o RGPD e a lei espanhola de proteção de dados. Os litígios cabem aos órgãos competentes segundo a lei."
+        ]
+      ]
+    ],
+    "cookies": [
+      "Cookies e armazenamento local",
+      "Não usamos cookies de publicidade, análise ou rastreio. O Google Search Console verifica o site sem exigir um cookie de rastreio no navegador.",
+      [
+        [
+          "Armazenamento necessário",
+          "A chave local cap-consent-v1 guarda a escolha e a data durante até 180 dias, sem nome ou email. É armazenamento do navegador, não um cookie publicitário. A antiga preferência cap-lang deixou de ser usada: o idioma depende do URL."
+        ],
+        [
+          "Assistente opcional",
+          "Se autorizado, o chat só carrega quando prime o botão. Liga-se à Vercel e, ao enviar mensagens, à OpenAI através do servidor. A CAP não guarda o novo histórico no armazenamento persistente do navegador nem na base de dados. Se rejeitar, o chat não carrega."
+        ],
+        [
+          "Escolha e retirada",
+          "Pode aceitar ou rejeitar no painel inicial sem bloquear o site. Configurar permite escolher o assistente. O botão permanente « Cookies e privacidade » permite alterar a decisão. Desativar fecha o chat e descarta a sessão visível."
+        ],
+        [
+          "Mais informação",
+          "Apagar o armazenamento do site no navegador faz reaparecer o painel. Para fornecedores, direitos e transferências, consulte a privacidade ou contacte contact@capconsultor.eu."
+        ]
+      ]
+    ]
+  }
+}

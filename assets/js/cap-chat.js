@@ -8,8 +8,6 @@
  * being embedded from the origins listed in its `frame-ancestors` CSP:
  * capconsultor.eu, www.capconsultor.eu and localhost:3000 / :3001.
  *
- * Override the target with, before this script loads:
- *   <script>window.CAP_WIDGET = { url: "https://…/", color: "#00e599" };</script>
  */
 (function () {
   "use strict";
@@ -17,7 +15,8 @@
   if (window.__capChatLoaded) return;
   window.__capChatLoaded = true;
 
-  var cfg = window.CAP_WIDGET || {};
+  var cfg = {};
+  var labels={es:["Abrir chat","Cerrar chat","Asistente de IA de CAP"],en:["Open chat","Close chat","CAP AI assistant"],fr:["Ouvrir le chat","Fermer le chat","Assistant IA CAP"],it:["Apri chat","Chiudi chat","Assistente IA CAP"],de:["Chat öffnen","Chat schließen","CAP KI-Assistent"],pt:["Abrir chat","Fechar chat","Assistente IA CAP"]}[document.documentElement.lang]||["Open chat","Close chat","CAP AI assistant"];
   var CHAT_URL = cfg.url || "https://capchatbotfinal.vercel.app/";
   var COLOR = cfg.color || "#00e599";
   var DARK = "#0b0c0c";
@@ -28,7 +27,10 @@
 
   // --- Chat iframe (created lazily on first open) ---------------------------
   var frame = document.createElement("iframe");
-  frame.title = "CAP Assistant";
+  frame.title = labels[2];
+  frame.referrerPolicy = "strict-origin-when-cross-origin";
+  frame.hidden = true;
+  frame.setAttribute("sandbox", "allow-scripts allow-same-origin allow-popups");
   frame.setAttribute("allow", "clipboard-write");
   frame.setAttribute("aria-hidden", "true");
   frame.style.cssText = [
@@ -54,7 +56,7 @@
   // --- Bubble button --------------------------------------------------------
   var btn = document.createElement("button");
   btn.type = "button";
-  btn.setAttribute("aria-label", "Open chat");
+  btn.setAttribute("aria-label", labels[0]);
   btn.style.cssText = [
     "position:fixed",
     "bottom:24px",
@@ -93,7 +95,10 @@
   btn.innerHTML = ICON_CHAT;
 
   function setOpen(v) {
+    if (v && !window.capConsent?.allowsAssistant()) { window.capConsent?.open(); return; }
     open = v;
+    frame.hidden = !open;
+    btn.setAttribute("aria-expanded", String(open));
     if (open && !loaded) {
       frame.src = CHAT_URL;
       loaded = true;
@@ -103,7 +108,7 @@
     frame.style.pointerEvents = open ? "auto" : "none";
     frame.setAttribute("aria-hidden", open ? "false" : "true");
     btn.innerHTML = open ? ICON_CLOSE : ICON_CHAT;
-    btn.setAttribute("aria-label", open ? "Close chat" : "Open chat");
+    btn.setAttribute("aria-label", labels[open ? 1 : 0]);
   }
 
   btn.addEventListener("click", function () {
@@ -113,6 +118,8 @@
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape" && open) setOpen(false);
   });
+
+  document.addEventListener("cap:consent", function(e) { if (!e.detail.assistant) {setOpen(false); frame.removeAttribute("src");loaded=false;} });
 
   function mount() {
     document.body.appendChild(frame);

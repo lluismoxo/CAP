@@ -1,139 +1,35 @@
-/**
- * CAP — contact form.
- *
- * Two delivery modes, picked automatically:
- *
- *  1. Express backend (`POST /api/contact`) when the site is served by
- *     server/index.js — the secret Supabase key stays on the server.
- *  2. Direct insert into Supabase with the publishable key, used on static
- *     hosting (GitHub Pages) where no backend exists.
- *
- * The publishable key is designed to be public: the row-level security policy
- * on `clientes_web` only allows INSERT with origen='web', and grants no read
- * access whatsoever. Never put the secret key in this file.
- */
-(function () {
-  var SUPABASE_URL = "https://dzslnlqylsnxotnidfhi.supabase.co";
-  var SUPABASE_PUBLISHABLE_KEY = "sb_publishable_KLKEa0gXMYcqcpV47KNYqg_DLkdJZQX";
-
-  // On localhost the Express backend is available; anywhere else we go direct.
-  var USE_BACKEND =
-    location.hostname === "localhost" || location.hostname === "127.0.0.1";
-
-  var form = document.getElementById("contact-form");
-  var status = document.getElementById("form-status");
-  var button = document.getElementById("submit-btn");
+/* Contact data is validated again on the server; no database key belongs here. */
+(() => {
+  'use strict';
+  const form = document.getElementById('contact-form');
+  const status = document.getElementById('form-status');
+  const button = document.getElementById('submit-btn');
   if (!form || !status || !button) return;
-
-  var defaultLabel = button.textContent;
-
-  function show(message, kind) {
-    status.textContent = message;
-    status.hidden = false;
-    status.style.color = kind === "error" ? "#ff6b6b" : "#00e599";
-  }
-
-  function hide() {
-    status.hidden = true;
-    status.textContent = "";
-  }
-
-  function setBusy(busy) {
-    button.disabled = busy;
-    button.style.opacity = busy ? ".45" : "1";
-    button.style.cursor = busy ? "not-allowed" : "pointer";
-    button.textContent = busy ? "Enviando…" : defaultLabel;
-  }
-
-  // --- Delivery ------------------------------------------------------------
-
-  async function sendViaBackend(payload) {
-    var response = await fetch("/api/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload),
-    });
-    var result = await response.json().catch(function () {
-      return {};
-    });
-    if (!response.ok || !result.ok) {
-      var firstError = result.errors && Object.values(result.errors)[0];
-      throw new Error(firstError || result.error || "Algo ha salido mal. Inténtalo de nuevo.");
-    }
-  }
-
-  async function sendToSupabase(payload) {
-    // No `Prefer: return=representation` here: the RLS policy grants INSERT
-    // only, so asking for the row back would make the request fail.
-    var response = await fetch(SUPABASE_URL + "/rest/v1/clientes_web", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        apikey: SUPABASE_PUBLISHABLE_KEY,
-        Authorization: "Bearer " + SUPABASE_PUBLISHABLE_KEY,
-      },
-      body: JSON.stringify({
-        nombre_contacto: payload.name,
-        nombre_negocio: payload.company || payload.name,
-        email: payload.email,
-        mensaje: payload.message || null,
-        origen: "web",
-      }),
-    });
-    if (!response.ok) {
-      throw new Error("No hemos podido guardar tu solicitud. Inténtalo de nuevo en un momento.");
-    }
-  }
-
-  form.addEventListener("submit", async function (event) {
+  const messages = {
+    es:['Enviando…','Consulta enviada. Te responderemos por email.','No se ha podido enviar. Inténtalo de nuevo o escribe a contact@capconsultor.eu.'],
+    en:['Sending…','Message received. We will reply by email.','Unable to send. Try again or email contact@capconsultor.eu.'],
+    fr:['Envoi…','Message reçu. Nous répondrons par email.','Envoi impossible. Réessayez ou écrivez à contact@capconsultor.eu.'],
+    it:['Invio…','Messaggio ricevuto. Risponderemo via email.','Invio non riuscito. Riprova o scrivi a contact@capconsultor.eu.'],
+    de:['Wird gesendet…','Nachricht erhalten. Wir antworten per E-Mail.','Senden fehlgeschlagen. Erneut versuchen oder contact@capconsultor.eu kontaktieren.'],
+    pt:['A enviar…','Mensagem recebida. Responderemos por email.','Não foi possível enviar. Tente novamente ou escreva para contact@capconsultor.eu.']
+  };
+  let pending = false;
+  status.setAttribute('role','status'); status.setAttribute('aria-live','polite');
+  form.addEventListener('submit', async event => {
     event.preventDefault();
-    hide();
-
-    var data = Object.fromEntries(new FormData(form).entries());
-
-    // Honeypot: only bots fill the hidden field.
-    if ((data.website_url || "").trim()) {
-      form.reset();
-      show("Gracias — hemos recibido tu solicitud y te responderemos en breve.", "success");
-      return;
-    }
-
-    // El `maxlength` del formulario se salta desde las herramientas del
-    // navegador, y la tabla no impone longitud: sin este recorte se pueden
-    // insertar campos de cientos de miles de caracteres. Los límites son los
-    // mismos del HTML, holgados para cualquier envío legítimo.
-    function limitar(valor, max) {
-      return (valor || "").trim().slice(0, max);
-    }
-
-    var payload = {
-      name: limitar(data.name, 120),
-      company: limitar(data.company, 160),
-      email: limitar(data.email, 254),
-      message: limitar(data.message, 4000),
-      consent: form.consent.checked,
-    };
-
-    if (!payload.name) return show("Introduce tu nombre.", "error");
-    if (!payload.email) return show("Introduce tu email.", "error");
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(payload.email)) {
-      return show("Ese email no parece válido.", "error");
-    }
-    if (!payload.consent) return show("Debes aceptar la Política de Privacidad.", "error");
-
-    setBusy(true);
-
+    if (pending || !form.reportValidity()) return;
+    const data = Object.fromEntries(new FormData(form));
+    const copy = messages[document.documentElement.lang] || messages.es;
+    pending = true;button.disabled=true;const label=button.textContent;button.textContent=copy[0];status.hidden=true;
     try {
-      if (USE_BACKEND) await sendViaBackend(payload);
-      else await sendToSupabase(payload);
-
-      form.reset();
-      show("Gracias — hemos recibido tu solicitud y te responderemos en breve.", "success");
-      setBusy(true);
-      button.textContent = "Solicitud enviada";
-    } catch (err) {
-      show(err.message || "No se ha podido contactar con el servidor. Inténtalo de nuevo en un momento.", "error");
-      setBusy(false);
-    }
+      const response = await fetch('https://capchatbotfinal.vercel.app/api/contact',{
+        method:'POST',headers:{'Content-Type':'application/json'},signal:AbortSignal.timeout(15000),
+        body:JSON.stringify({name:data.name,company:data.company || '',email:data.email,message:data.message || '',website_url:data.website_url || '',consent:form.elements.consent.checked})
+      });
+      const result=await response.json();
+      if (!response.ok || !result.ok) throw new Error(document.documentElement.lang==='es' && result.error ? result.error : copy[2]);
+      form.reset();status.textContent=copy[1];status.dataset.kind='success';
+    } catch(error) {status.textContent=error.name==='AbortError' || error.name==='TimeoutError' ? copy[2] : error.message || copy[2];status.dataset.kind='error';}
+    finally {pending=false;button.disabled=false;button.textContent=label;status.hidden=false;}
   });
 })();

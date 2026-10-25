@@ -16,7 +16,7 @@
  *   AVISO_PARA        destino del aviso (por defecto lluismoxo@gmail.com)
  *   AVISO_DESDE       remitente; debe ser de un dominio verificado en Resend.
  *                     Sin dominio propio verificado, usa onboarding@resend.dev
- *   WEBHOOK_SECRET    opcional pero recomendable: si se define, la función
+ *   WEBHOOK_SECRET    obligatorio: la función
  *                     rechaza las peticiones que no lleven esa cabecera
  *
  * Devuelve siempre 200 cuando el registro llega bien, aunque falle el email:
@@ -48,7 +48,8 @@ function esc(value: unknown): string {
 }
 
 function fecha(iso?: string | null): string {
-  const d = iso ? new Date(iso) : new Date();
+  const candidate = iso ? new Date(iso) : new Date();
+  const d = Number.isNaN(candidate.getTime()) ? new Date() : candidate;
   return new Intl.DateTimeFormat("es-ES", {
     dateStyle: "full",
     timeStyle: "short",
@@ -133,20 +134,18 @@ Deno.serve(async (req: Request) => {
     return new Response("Method not allowed", { status: 405 });
   }
 
-  // Si se define WEBHOOK_SECRET, exigirlo. Evita que cualquiera que descubra
-  // la URL pueda provocar envíos de email.
+  // Fail closed if authentication configuration is missing.
   const secret = Deno.env.get("WEBHOOK_SECRET");
-  if (secret) {
-    const enviado = req.headers.get("x-webhook-secret");
-    if (enviado !== secret) {
-      console.warn("Petición rechazada: cabecera x-webhook-secret incorrecta");
-      return new Response(JSON.stringify({ error: "no autorizado" }), {
-        status: 401,
-        headers: { "Content-Type": "application/json" },
-      });
-    }
+  const supplied = req.headers.get("x-webhook-secret") || "";
+  const encoder = new TextEncoder();
+  const hash = async (value: string) => new Uint8Array(await crypto.subtle.digest("SHA-256", encoder.encode(value)));
+  const [expected, received] = await Promise.all([hash(secret || ""), hash(supplied)]);
+  let difference = 0;
+  for (let i=0; i<expected.length; i++) difference |= expected[i] ^ received[i];
+  if (!secret || !supplied || difference !== 0) {
+    return Response.json({error:"no autorizado"}, {status:401});
   }
-
+  if (!/^application\/json(?:;|$)/i.test(req.headers.get("content-type") || "")) return Response.json({error:"formato inválido"},{status:415});
   const apiKey = Deno.env.get("RESEND_API_KEY");
   if (!apiKey) {
     console.error("Falta RESEND_API_KEY en los secrets de la función");
@@ -161,7 +160,12 @@ Deno.serve(async (req: Request) => {
 
   let payload: { type?: string; table?: string; record?: ContactoRecord };
   try {
-    payload = await req.json();
+    const reader = req.body?.getReader();
+    if (!reader) throw new Error("Empty body");
+    const chunks: Uint8Array[] = []; let size=0;
+    while(true){const {value,done}=await reader.read();if(done)break;size+=value.length;if(size>131072){await reader.cancel();return Response.json({error:"demasiado grande"},{status:413});}chunks.push(value);}
+    const buffer=new Uint8Array(size);let offset=0;for(const chunk of chunks){buffer.set(chunk,offset);offset+=chunk.length;}
+    payload = JSON.parse(new TextDecoder().decode(buffer));
   } catch {
     return new Response(JSON.stringify({ error: "cuerpo no es JSON" }), {
       status: 400,
@@ -169,8 +173,9 @@ Deno.serve(async (req: Request) => {
     });
   }
 
+  if (!payload || typeof payload!=="object" || (payload.table && payload.table!=="clientes_web")) return Response.json({error:"evento inválido"},{status:400});
   const record = payload.record;
-  if (!record) {
+  if (!record || typeof record!=="object" || Array.isArray(record)) {
     return new Response(JSON.stringify({ error: "falta record" }), {
       status: 400,
       headers: { "Content-Type": "application/json" },
@@ -186,10 +191,15 @@ Deno.serve(async (req: Request) => {
     });
   }
 
+  for(const [key,max] of Object.entries({nombre_contacto:120,nombre_negocio:160,email:254,mensaje:4000,origen:40,created_at:64})){
+    const value=record[key as keyof ContactoRecord];
+    if(value!=null && (typeof value!=="string" || value.length>max))return Response.json({error:"registro inválido"},{status:400});
+  }
+  if(record.email && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(record.email))return Response.json({error:"email inválido"},{status:400});
   const { html, texto, nombre, empresa, email } = construirEmail(record);
   const asunto = empresa
-    ? `Nuevo contacto: ${nombre} (${empresa})`
-    : `Nuevo contacto: ${nombre}`;
+    ? `Nuevo contacto: ${nombre} (${empresa})`.replace(/[\r\n]/g," ")
+    : `Nuevo contacto: ${nombre}`.replace(/[\r\n]/g," ");
 
   try {
     const res = await fetch(RESEND_ENDPOINT, {
@@ -198,6 +208,7 @@ Deno.serve(async (req: Request) => {
         Authorization: `Bearer ${apiKey}`,
         "Content-Type": "application/json",
       },
+      signal: AbortSignal.timeout(10000),
       body: JSON.stringify({
         from: `CAP Consultor <${desde}>`,
         to: [para],
@@ -209,25 +220,25 @@ Deno.serve(async (req: Request) => {
       }),
     });
 
-    const cuerpo = await res.text();
+    await res.text();
     if (!res.ok) {
       // 200 a propósito: el contacto ya está guardado y reintentar no ayuda.
-      console.error("Resend ha fallado", res.status, cuerpo);
+      console.error("Resend ha fallado", res.status);
       return new Response(
-        JSON.stringify({ ok: false, email_enviado: false, estado: res.status, detalle: cuerpo }),
+        JSON.stringify({ ok: false, email_enviado: false, estado: res.status }),
         { status: 200, headers: { "Content-Type": "application/json" } },
       );
     }
 
-    console.log("Aviso enviado a", para, cuerpo);
+    console.log("Aviso enviado");
     return new Response(JSON.stringify({ ok: true, email_enviado: true }), {
       status: 200,
       headers: { "Content-Type": "application/json" },
     });
   } catch (err) {
-    console.error("Error llamando a Resend", err);
+    console.error("Error llamando a Resend");
     return new Response(
-      JSON.stringify({ ok: false, email_enviado: false, error: String(err) }),
+      JSON.stringify({ ok: false, email_enviado: false, error: "proveedor no disponible" }),
       { status: 200, headers: { "Content-Type": "application/json" } },
     );
   }

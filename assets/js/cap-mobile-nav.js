@@ -61,6 +61,7 @@
     var top = bars[0], mid = bars[1], bot = bars[2], x1 = bars[3], x2 = bars[4];
 
     // --- Links: taken from the header's primary nav ------------------------
+    var prefix = document.documentElement.lang === 'es' ? '/' : '/' + document.documentElement.lang + '/';
     var LINKS = [
       ['Servicios', './services.html'],
       ['Sectores', './industries.html'],
@@ -70,6 +71,7 @@
       ['Contacto', './contact.html']
     ];
 
+    LINKS.forEach(function(item){var link=document.querySelector('header a[href="'+prefix+item[1].replace('./','')+'"]');if(link)item[0]=link.textContent.trim();});
     var style = document.createElement('style');
     style.textContent = [
       // Top padding clears the topbar + header so the first link is not cut off.
@@ -96,11 +98,12 @@
 
     var panel = document.createElement('nav');
     panel.id = 'cap-mnav';
+    panel.inert = true;
     panel.setAttribute('aria-label', 'Navegación móvil');
     panel.setAttribute('aria-hidden', 'true');
 
     var html = LINKS.map(function (l) {
-      return '<a href="' + l[1] + '">' + l[0] + '</a>';
+      return '<a href="' + prefix + l[1].replace('./', '') + '">' + l[0] + '</a>';
     }).join('');
     html += '<div class="cap-mnav-foot">' +
       '<a href="https://www.linkedin.com/company/cap-consultor%C3%ADa-adaptable-para-pymes/" target="_blank" rel="noopener">LinkedIn</a>' +
@@ -109,6 +112,10 @@
     document.body.appendChild(panel);
 
     var open = false;
+    const labels={es:['Abrir menú','Cerrar menú','Navegación móvil'],en:['Open menu','Close menu','Mobile navigation'],fr:['Ouvrir le menu','Fermer le menu','Navigation mobile'],it:['Apri menu','Chiudi menu','Navigazione mobile'],de:['Menü öffnen','Menü schließen','Mobile Navigation'],pt:['Abrir menu','Fechar menu','Navegação móvel']}[document.documentElement.lang]||['Open menu','Close menu','Mobile navigation'];
+    panel.setAttribute('aria-label',labels[2]);
+    btn.setAttribute('aria-label',labels[0]);
+    btn.style.zIndex='50';
 
     function setBars(isOpen) {
       // Bars fade out, cross arms fade in.
@@ -121,12 +128,14 @@
 
     function setOpen(v) {
       open = v;
+      panel.inert = !open;
       panel.classList.toggle('open', open);
       panel.setAttribute('aria-hidden', open ? 'false' : 'true');
       document.body.classList.toggle('cap-mnav-open', open);
       btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-      btn.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+      btn.setAttribute('aria-label', labels[open ? 1 : 0]);
       setBars(open);
+      if(open)panel.querySelector('a').focus();else btn.focus();
     }
 
     btn.setAttribute('aria-controls', 'cap-mnav');
@@ -139,6 +148,11 @@
 
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape' && open) setOpen(false);
+      if(e.key==='Tab' && open){
+        const items=[btn,...panel.querySelectorAll('a[href]')],first=items[0],last=items.at(-1);
+        if(e.shiftKey && document.activeElement===first){e.preventDefault();last.focus();}
+        else if(!e.shiftKey && document.activeElement===last){e.preventDefault();first.focus();}
+      }
     });
 
     // Close when navigating, and when the viewport grows back to desktop.

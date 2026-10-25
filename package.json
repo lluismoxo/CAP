@@ -1,0 +1,22 @@
+{
+  "name": "cap",
+  "version": "1.0.0",
+  "description": "CAP static website",
+  "scripts": {
+    "build": "node tools/build-vercel.mjs",
+    "test": "npm run build && npm run check && node --experimental-strip-types tools/test-webhook.mjs",
+    "check": "node tools/check-site.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lluismoxo/CAP.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "type": "commonjs",
+  "devDependencies": {
+    "parse5": "8.0.0"
+  },
+  "private": true
+}

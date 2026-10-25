@@ -1,0 +1,417 @@
+{
+  "scope": "CAP Consultor es una iniciativa personal gratuita y sin empresa constituida. Ofrecemos consultoría general con especialización tecnológica desde Barcelona para España y el resto del mundo.",
+  "replace": {
+    "CAP es el socio de consultoría": "Consultoría general y tecnológica",
+    "hecho para negocios con grandes ambiciones.": "para pymes con grandes ambiciones.",
+    "experiencia, eficiencia y precios asequibles — adaptados a la realidad de pymes, pequeños negocios y startups": "iniciativa gratuita desde Barcelona — para pymes, pequeños negocios y startups de España y otros países",
+    "Soluciones expertas y de calidad sin los altos costes de la consultoría tradicional.": "Consultoría accesible y orientada a resolver problemas reales.",
+    "Mantenemos nuestros servicios accesibles, transparentes y centrados en aportar valor real a tu negocio.": "Actualmente ofrecemos apoyo gratuito, sin ánimo de lucro y sin empresa constituida.",
+    "Consultoría eficiente para pymes, pequeños negocios y startups.": "Consultoría general con especialización tecnológica. Desde Barcelona para España y el mundo.",
+    "© 2026 CAP Consultor. Todos los derechos reservados. Un equipo especializado en marketing digital y operaciones de negocio, trabajando junto a pymes, pequeños negocios y startups.": "© 2026 CAP Consultor. Iniciativa personal gratuita, sin ánimo de lucro y sin empresa constituida.",
+    "Construido con Claude Design y el modelo Fable 5 para el mejor resultado.": "Diseño y desarrollo adaptados al proyecto, con revisión humana antes de la entrega.",
+    "Programamos tu CRM con Claude Code y Fable 5, y encima añadimos live artifacts para análisis automático y recurrente de tus propios datos.": "Desarrollamos tu CRM a medida y añadimos paneles para analizar tus datos de forma automática y recurrente.",
+    "Empresa": "Proyecto",
+    "La consultoría más económica y efectiva": "Consultoría general con especialización tecnológica",
+    "Soluciones expertas y de calidad": "Consultoría accesible y práctica.",
+    "sin los altos costes de la consultoría tradicional. Mantenemos nuestros servicios accesibles, transparentes y centrados en aportar valor real a tu negocio.": "Actualmente ofrecemos apoyo gratuito, sin ánimo de lucro y sin empresa constituida. Priorizamos las soluciones que aportan valor a tu negocio.",
+    "LA CONSULTORÍA MÁS ECONÓMICA Y EFECTIVA": "Consultoría general con especialización tecnológica"
+  },
+  "meta": {
+    "index.html": [
+      "CAP Consultor | Consultoría general y tecnológica en Barcelona",
+      "Consultoría para pymes: estrategia, operaciones, software a medida, webs e IA. Iniciativa gratuita desde Barcelona para España y otros países."
+    ],
+    "services.html": [
+      "Servicios de consultoría y software a medida | CAP Consultor",
+      "Consultoría general con especialización tecnológica: webs, ecommerce, software a medida, IA, CRM y operaciones. Desde Barcelona para España y el mundo."
+    ],
+    "contact.html": [
+      "Contacta con CAP Consultor | Barcelona y atención internacional",
+      "Cuéntanos tu proyecto. Contacto: contact@capconsultor.eu y +34 669 802 256. Consultoría gratuita desde Barcelona para España y otros países."
+    ]
+  },
+  "translations": {
+    "en": {
+      "CAP Consultor es una iniciativa personal gratuita y sin empresa constituida. Ofrecemos consultoría general con especialización tecnológica desde Barcelona para España y el resto del mundo.": "CAP Consultor is a free personal initiative with no incorporated company. We offer general consulting with a technology specialisation from Barcelona for Spain and the rest of the world.",
+      "Consultoría general y tecnológica": "General and technology consulting",
+      "para pymes con grandes ambiciones.": "for small businesses with big ambitions.",
+      "iniciativa gratuita desde Barcelona — para pymes, pequeños negocios y startups de España y otros países": "a free initiative from Barcelona — for small businesses and startups in Spain and other countries",
+      "Consultoría accesible y orientada a resolver problemas reales.": "Accessible consulting focused on solving real problems.",
+      "Actualmente ofrecemos apoyo gratuito, sin ánimo de lucro y sin empresa constituida.": "We currently provide free support, with no profit motive and no incorporated company.",
+      "Consultoría general con especialización tecnológica. Desde Barcelona para España y el mundo.": "General consulting with a technology specialisation. From Barcelona to Spain and the world.",
+      "© 2026 CAP Consultor. Iniciativa personal gratuita, sin ánimo de lucro y sin empresa constituida.": "© 2026 CAP Consultor. A free personal initiative, with no profit motive or incorporated company.",
+      "Diseño y desarrollo adaptados al proyecto, con revisión humana antes de la entrega.": "Design and development tailored to the project, with human review before delivery.",
+      "Desarrollamos tu CRM a medida y añadimos paneles para analizar tus datos de forma automática y recurrente.": "We build your custom CRM and add dashboards to analyse your data automatically and regularly.",
+      "Proyecto": "Project",
+      "CAP Consultor | Consultoría general y tecnológica en Barcelona": "CAP Consultor | General and technology consulting in Barcelona",
+      "Consultoría para pymes: estrategia, operaciones, software a medida, webs e IA. Iniciativa gratuita desde Barcelona para España y otros países.": "Consulting for small businesses: strategy, operations, custom software, websites and AI. A free initiative from Barcelona for Spain and other countries.",
+      "Servicios de consultoría y software a medida | CAP Consultor": "Consulting and custom software services | CAP Consultor",
+      "Consultoría general con especialización tecnológica: webs, ecommerce, software a medida, IA, CRM y operaciones. Desde Barcelona para España y el mundo.": "General consulting with a technology specialisation: websites, ecommerce, custom software, AI, CRM and operations. From Barcelona to Spain and the world.",
+      "Contacta con CAP Consultor | Barcelona y atención internacional": "Contact CAP Consultor | Barcelona and international support",
+      "Cuéntanos tu proyecto. Contacto: contact@capconsultor.eu y +34 669 802 256. Consultoría gratuita desde Barcelona para España y otros países.": "Tell us about your project. Contact contact@capconsultor.eu or +34 669 802 256. Free consulting from Barcelona for Spain and other countries.",
+      "Diagnóstico claro": "Clear assessment",
+      "Prioridades compartidas": "Shared priorities",
+      "Solución a medida": "Custom solution",
+      "Revisión conjunta": "Joint review",
+      "Escuchar": "Listen",
+      "Diseñar": "Design",
+      "Construir": "Build",
+      "Comprobar": "Verify",
+      "Comercio": "Retail",
+      "Restauración": "Hospitality",
+      "Educación": "Education",
+      "Servicios": "Services",
+      "Industria": "Industry",
+      "Logística": "Logistics",
+      "Estrategia": "Strategy",
+      "Tecnología": "Technology",
+      "Operaciones": "Operations",
+      "Datos": "Data",
+      "Consultoría general con especialización tecnológica": "General consulting with a technology specialisation",
+      "Consultoría accesible y práctica.": "Accessible, practical consulting.",
+      "Actualmente ofrecemos apoyo gratuito, sin ánimo de lucro y sin empresa constituida. Priorizamos las soluciones que aportan valor a tu negocio.": "We currently provide free support, with no profit motive or incorporated company. We prioritise solutions that bring value to your business."
+    },
+    "fr": {
+      "CAP Consultor es una iniciativa personal gratuita y sin empresa constituida. Ofrecemos consultoría general con especialización tecnológica desde Barcelona para España y el resto del mundo.": "CAP Consultor est une initiative personnelle gratuite, sans société constituée. Nous proposons du conseil général avec une spécialisation technologique depuis Barcelone, pour l’Espagne et le reste du monde.",
+      "Consultoría general y tecnológica": "Conseil général et technologique",
+      "para pymes con grandes ambiciones.": "pour les PME aux grandes ambitions.",
+      "iniciativa gratuita desde Barcelona — para pymes, pequeños negocios y startups de España y otros países": "une initiative gratuite depuis Barcelone — pour les PME et startups en Espagne et ailleurs",
+      "Consultoría accesible y orientada a resolver problemas reales.": "Un conseil accessible pour résoudre des problèmes concrets.",
+      "Actualmente ofrecemos apoyo gratuito, sin ánimo de lucro y sin empresa constituida.": "Nous proposons actuellement un accompagnement gratuit, sans but lucratif et sans société constituée.",
+      "Consultoría general con especialización tecnológica. Desde Barcelona para España y el mundo.": "Conseil général avec une spécialisation technologique. Depuis Barcelone, pour l’Espagne et le monde.",
+      "© 2026 CAP Consultor. Iniciativa personal gratuita, sin ánimo de lucro y sin empresa constituida.": "© 2026 CAP Consultor. Initiative personnelle gratuite, sans but lucratif et sans société constituée.",
+      "Diseño y desarrollo adaptados al proyecto, con revisión humana antes de la entrega.": "Conception et développement adaptés au projet, avec une vérification humaine avant livraison.",
+      "Desarrollamos tu CRM a medida y añadimos paneles para analizar tus datos de forma automática y recurrente.": "Nous développons votre CRM sur mesure et ajoutons des tableaux de bord pour analyser vos données automatiquement et régulièrement.",
+      "Proyecto": "Projet",
+      "CAP Consultor | Consultoría general y tecnológica en Barcelona": "CAP Consultor | Conseil général et technologique à Barcelone",
+      "Consultoría para pymes: estrategia, operaciones, software a medida, webs e IA. Iniciativa gratuita desde Barcelona para España y otros países.": "Conseil pour PME : stratégie, opérations, logiciels sur mesure, sites web et IA. Initiative gratuite depuis Barcelone pour l’Espagne et d’autres pays.",
+      "Servicios de consultoría y software a medida | CAP Consultor": "Conseil et logiciels sur mesure | CAP Consultor",
+      "Consultoría general con especialización tecnológica: webs, ecommerce, software a medida, IA, CRM y operaciones. Desde Barcelona para España y el mundo.": "Conseil général spécialisé en technologie : sites web, ecommerce, logiciels, IA, CRM et opérations. Depuis Barcelone pour l’Espagne et le monde.",
+      "Contacta con CAP Consultor | Barcelona y atención internacional": "Contacter CAP Consultor | Barcelone et accompagnement international",
+      "Cuéntanos tu proyecto. Contacto: contact@capconsultor.eu y +34 669 802 256. Consultoría gratuita desde Barcelona para España y otros países.": "Parlez-nous de votre projet : contact@capconsultor.eu ou +34 669 802 256. Conseil gratuit depuis Barcelone pour l’Espagne et d’autres pays.",
+      "Diagnóstico claro": "Diagnostic clair",
+      "Prioridades compartidas": "Priorités partagées",
+      "Solución a medida": "Solution sur mesure",
+      "Revisión conjunta": "Vérification ensemble",
+      "Escuchar": "Écouter",
+      "Diseñar": "Concevoir",
+      "Construir": "Construire",
+      "Comprobar": "Vérifier",
+      "Comercio": "Commerce",
+      "Restauración": "Restauration",
+      "Educación": "Éducation",
+      "Servicios": "Services",
+      "Industria": "Industrie",
+      "Logística": "Logistique",
+      "Estrategia": "Stratégie",
+      "Tecnología": "Technologie",
+      "Operaciones": "Opérations",
+      "Datos": "Données",
+      "Consultoría general con especialización tecnológica": "Conseil général spécialisé en technologie",
+      "Consultoría accesible y práctica.": "Un conseil accessible et pratique.",
+      "Actualmente ofrecemos apoyo gratuito, sin ánimo de lucro y sin empresa constituida. Priorizamos las soluciones que aportan valor a tu negocio.": "Notre accompagnement est actuellement gratuit, sans but lucratif ni société constituée. Nous privilégions les solutions utiles à votre activité."
+    },
+    "it": {
+      "CAP Consultor es una iniciativa personal gratuita y sin empresa constituida. Ofrecemos consultoría general con especialización tecnológica desde Barcelona para España y el resto del mundo.": "CAP Consultor è un’iniziativa personale gratuita, senza una società costituita. Offriamo consulenza generale con specializzazione tecnologica da Barcellona per la Spagna e il resto del mondo.",
+      "Consultoría general y tecnológica": "Consulenza generale e tecnologica",
+      "para pymes con grandes ambiciones.": "per PMI con grandi ambizioni.",
+      "iniciativa gratuita desde Barcelona — para pymes, pequeños negocios y startups de España y otros países": "un’iniziativa gratuita da Barcellona — per piccole imprese e startup in Spagna e all’estero",
+      "Consultoría accesible y orientada a resolver problemas reales.": "Consulenza accessibile per risolvere problemi reali.",
+      "Actualmente ofrecemos apoyo gratuito, sin ánimo de lucro y sin empresa constituida.": "Attualmente offriamo supporto gratuito, senza scopo di lucro e senza una società costituita.",
+      "Consultoría general con especialización tecnológica. Desde Barcelona para España y el mundo.": "Consulenza generale con specializzazione tecnologica. Da Barcellona alla Spagna e al mondo.",
+      "© 2026 CAP Consultor. Iniciativa personal gratuita, sin ánimo de lucro y sin empresa constituida.": "© 2026 CAP Consultor. Iniziativa personale gratuita, senza scopo di lucro e senza una società costituita.",
+      "Diseño y desarrollo adaptados al proyecto, con revisión humana antes de la entrega.": "Progettazione e sviluppo su misura, con revisione umana prima della consegna.",
+      "Desarrollamos tu CRM a medida y añadimos paneles para analizar tus datos de forma automática y recurrente.": "Sviluppiamo il tuo CRM su misura e aggiungiamo pannelli per analizzare i dati in modo automatico e periodico.",
+      "Proyecto": "Progetto",
+      "CAP Consultor | Consultoría general y tecnológica en Barcelona": "CAP Consultor | Consulenza generale e tecnologica a Barcellona",
+      "Consultoría para pymes: estrategia, operaciones, software a medida, webs e IA. Iniciativa gratuita desde Barcelona para España y otros países.": "Consulenza per PMI: strategia, operazioni, software su misura, siti web e IA. Iniziativa gratuita da Barcellona per la Spagna e altri paesi.",
+      "Servicios de consultoría y software a medida | CAP Consultor": "Consulenza e software su misura | CAP Consultor",
+      "Consultoría general con especialización tecnológica: webs, ecommerce, software a medida, IA, CRM y operaciones. Desde Barcelona para España y el mundo.": "Consulenza generale specializzata in tecnologia: siti web, ecommerce, software, IA, CRM e operazioni. Da Barcellona per la Spagna e il mondo.",
+      "Contacta con CAP Consultor | Barcelona y atención internacional": "Contatta CAP Consultor | Barcellona e supporto internazionale",
+      "Cuéntanos tu proyecto. Contacto: contact@capconsultor.eu y +34 669 802 256. Consultoría gratuita desde Barcelona para España y otros países.": "Raccontaci il tuo progetto: contact@capconsultor.eu o +34 669 802 256. Consulenza gratuita da Barcellona per la Spagna e altri paesi.",
+      "Diagnóstico claro": "Diagnosi chiara",
+      "Prioridades compartidas": "Priorità condivise",
+      "Solución a medida": "Soluzione su misura",
+      "Revisión conjunta": "Revisione congiunta",
+      "Escuchar": "Ascoltare",
+      "Diseñar": "Progettare",
+      "Construir": "Costruire",
+      "Comprobar": "Verificare",
+      "Comercio": "Commercio",
+      "Restauración": "Ristorazione",
+      "Educación": "Istruzione",
+      "Servicios": "Servizi",
+      "Industria": "Industria",
+      "Logística": "Logistica",
+      "Estrategia": "Strategia",
+      "Tecnología": "Tecnologia",
+      "Operaciones": "Operazioni",
+      "Datos": "Dati",
+      "Consultoría general con especialización tecnológica": "Consulenza generale specializzata in tecnologia",
+      "Consultoría accesible y práctica.": "Consulenza accessibile e pratica.",
+      "Actualmente ofrecemos apoyo gratuito, sin ánimo de lucro y sin empresa constituida. Priorizamos las soluciones que aportan valor a tu negocio.": "Il supporto è attualmente gratuito, senza scopo di lucro o società costituita. Diamo priorità alle soluzioni utili alla tua attività."
+    },
+    "de": {
+      "CAP Consultor es una iniciativa personal gratuita y sin empresa constituida. Ofrecemos consultoría general con especialización tecnológica desde Barcelona para España y el resto del mundo.": "CAP Consultor ist eine kostenlose persönliche Initiative ohne gegründetes Unternehmen. Wir bieten allgemeine Beratung mit technologischem Schwerpunkt aus Barcelona für Spanien und die Welt.",
+      "Consultoría general y tecnológica": "Allgemeine und technologische Beratung",
+      "para pymes con grandes ambiciones.": "für kleine Unternehmen mit großen Zielen.",
+      "iniciativa gratuita desde Barcelona — para pymes, pequeños negocios y startups de España y otros países": "eine kostenlose Initiative aus Barcelona — für kleine Unternehmen und Startups in Spanien und weltweit",
+      "Consultoría accesible y orientada a resolver problemas reales.": "Zugängliche Beratung zur Lösung konkreter Probleme.",
+      "Actualmente ofrecemos apoyo gratuito, sin ánimo de lucro y sin empresa constituida.": "Wir bieten derzeit kostenlose Unterstützung ohne Gewinnerzielungsabsicht und ohne gegründetes Unternehmen.",
+      "Consultoría general con especialización tecnológica. Desde Barcelona para España y el mundo.": "Allgemeine Beratung mit technologischem Schwerpunkt. Aus Barcelona für Spanien und die Welt.",
+      "© 2026 CAP Consultor. Iniciativa personal gratuita, sin ánimo de lucro y sin empresa constituida.": "© 2026 CAP Consultor. Kostenlose persönliche Initiative ohne Gewinnerzielungsabsicht und ohne gegründetes Unternehmen.",
+      "Diseño y desarrollo adaptados al proyecto, con revisión humana antes de la entrega.": "Projektgerechtes Design und Entwicklung mit menschlicher Prüfung vor der Übergabe.",
+      "Desarrollamos tu CRM a medida y añadimos paneles para analizar tus datos de forma automática y recurrente.": "Wir entwickeln Ihr individuelles CRM und ergänzen Dashboards für die automatische und regelmäßige Datenanalyse.",
+      "Proyecto": "Projekt",
+      "CAP Consultor | Consultoría general y tecnológica en Barcelona": "CAP Consultor | Allgemeine und Technologieberatung in Barcelona",
+      "Consultoría para pymes: estrategia, operaciones, software a medida, webs e IA. Iniciativa gratuita desde Barcelona para España y otros países.": "Beratung für KMU: Strategie, Abläufe, individuelle Software, Websites und KI. Kostenlose Initiative aus Barcelona für Spanien und weitere Länder.",
+      "Servicios de consultoría y software a medida | CAP Consultor": "Beratung und individuelle Software | CAP Consultor",
+      "Consultoría general con especialización tecnológica: webs, ecommerce, software a medida, IA, CRM y operaciones. Desde Barcelona para España y el mundo.": "Allgemeine Beratung mit Technologie-Fokus: Websites, E-Commerce, Software, KI, CRM und Abläufe. Aus Barcelona für Spanien und die Welt.",
+      "Contacta con CAP Consultor | Barcelona y atención internacional": "Kontakt zu CAP Consultor | Barcelona und international",
+      "Cuéntanos tu proyecto. Contacto: contact@capconsultor.eu y +34 669 802 256. Consultoría gratuita desde Barcelona para España y otros países.": "Erzählen Sie uns von Ihrem Projekt: contact@capconsultor.eu oder +34 669 802 256. Kostenlose Beratung aus Barcelona für Spanien und weitere Länder.",
+      "Diagnóstico claro": "Klare Analyse",
+      "Prioridades compartidas": "Gemeinsame Prioritäten",
+      "Solución a medida": "Individuelle Lösung",
+      "Revisión conjunta": "Gemeinsame Prüfung",
+      "Escuchar": "Zuhören",
+      "Diseñar": "Gestalten",
+      "Construir": "Entwickeln",
+      "Comprobar": "Prüfen",
+      "Comercio": "Handel",
+      "Restauración": "Gastronomie",
+      "Educación": "Bildung",
+      "Servicios": "Dienstleistungen",
+      "Industria": "Industrie",
+      "Logística": "Logistik",
+      "Estrategia": "Strategie",
+      "Tecnología": "Technologie",
+      "Operaciones": "Betrieb",
+      "Datos": "Daten",
+      "Consultoría general con especialización tecnológica": "Allgemeine Beratung mit technologischem Schwerpunkt",
+      "Consultoría accesible y práctica.": "Zugängliche, praktische Beratung.",
+      "Actualmente ofrecemos apoyo gratuito, sin ánimo de lucro y sin empresa constituida. Priorizamos las soluciones que aportan valor a tu negocio.": "Unsere Unterstützung ist derzeit kostenlos, ohne Gewinnerzielungsabsicht oder gegründetes Unternehmen. Wir priorisieren Lösungen, die Ihrem Unternehmen helfen."
+    },
+    "pt": {
+      "CAP Consultor es una iniciativa personal gratuita y sin empresa constituida. Ofrecemos consultoría general con especialización tecnológica desde Barcelona para España y el resto del mundo.": "A CAP Consultor é uma iniciativa pessoal gratuita, sem empresa constituída. Oferecemos consultoria geral com especialização tecnológica a partir de Barcelona para Espanha e o resto do mundo.",
+      "Consultoría general y tecnológica": "Consultoria geral e tecnológica",
+      "para pymes con grandes ambiciones.": "para PME com grandes ambições.",
+      "iniciativa gratuita desde Barcelona — para pymes, pequeños negocios y startups de España y otros países": "uma iniciativa gratuita de Barcelona — para pequenas empresas e startups de Espanha e de outros países",
+      "Consultoría accesible y orientada a resolver problemas reales.": "Consultoria acessível para resolver problemas reais.",
+      "Actualmente ofrecemos apoyo gratuito, sin ánimo de lucro y sin empresa constituida.": "Atualmente oferecemos apoio gratuito, sem fins lucrativos e sem empresa constituída.",
+      "Consultoría general con especialización tecnológica. Desde Barcelona para España y el mundo.": "Consultoria geral com especialização tecnológica. De Barcelona para Espanha e o mundo.",
+      "© 2026 CAP Consultor. Iniciativa personal gratuita, sin ánimo de lucro y sin empresa constituida.": "© 2026 CAP Consultor. Iniciativa pessoal gratuita, sem fins lucrativos e sem empresa constituída.",
+      "Diseño y desarrollo adaptados al proyecto, con revisión humana antes de la entrega.": "Design e desenvolvimento adaptados ao projeto, com revisão humana antes da entrega.",
+      "Desarrollamos tu CRM a medida y añadimos paneles para analizar tus datos de forma automática y recurrente.": "Desenvolvemos o seu CRM à medida e acrescentamos painéis para analisar os seus dados de forma automática e periódica.",
+      "Proyecto": "Projeto",
+      "CAP Consultor | Consultoría general y tecnológica en Barcelona": "CAP Consultor | Consultoria geral e tecnológica em Barcelona",
+      "Consultoría para pymes: estrategia, operaciones, software a medida, webs e IA. Iniciativa gratuita desde Barcelona para España y otros países.": "Consultoria para PME: estratégia, operações, software à medida, sites e IA. Iniciativa gratuita de Barcelona para Espanha e outros países.",
+      "Servicios de consultoría y software a medida | CAP Consultor": "Consultoria e software à medida | CAP Consultor",
+      "Consultoría general con especialización tecnológica: webs, ecommerce, software a medida, IA, CRM y operaciones. Desde Barcelona para España y el mundo.": "Consultoria geral especializada em tecnologia: sites, ecommerce, software, IA, CRM e operações. De Barcelona para Espanha e o mundo.",
+      "Contacta con CAP Consultor | Barcelona y atención internacional": "Contactar CAP Consultor | Barcelona e apoio internacional",
+      "Cuéntanos tu proyecto. Contacto: contact@capconsultor.eu y +34 669 802 256. Consultoría gratuita desde Barcelona para España y otros países.": "Conte-nos o seu projeto: contact@capconsultor.eu ou +34 669 802 256. Consultoria gratuita de Barcelona para Espanha e outros países.",
+      "Diagnóstico claro": "Diagnóstico claro",
+      "Prioridades compartidas": "Prioridades partilhadas",
+      "Solución a medida": "Solução à medida",
+      "Revisión conjunta": "Revisão conjunta",
+      "Escuchar": "Ouvir",
+      "Diseñar": "Desenhar",
+      "Construir": "Construir",
+      "Comprobar": "Verificar",
+      "Comercio": "Comércio",
+      "Restauración": "Restauração",
+      "Educación": "Educação",
+      "Servicios": "Serviços",
+      "Industria": "Indústria",
+      "Logística": "Logística",
+      "Estrategia": "Estratégia",
+      "Tecnología": "Tecnologia",
+      "Operaciones": "Operações",
+      "Datos": "Dados",
+      "Consultoría general con especialización tecnológica": "Consultoria geral especializada em tecnologia",
+      "Consultoría accesible y práctica.": "Consultoria acessível e prática.",
+      "Actualmente ofrecemos apoyo gratuito, sin ánimo de lucro y sin empresa constituida. Priorizamos las soluciones que aportan valor a tu negocio.": "O apoio é atualmente gratuito, sem fins lucrativos ou empresa constituída. Priorizamos soluções que acrescentam valor ao seu negócio."
+    }
+  },
+  "services": [
+    "Desarrollo web",
+    "Ecommerce",
+    "Software a medida.",
+    "IA y automatización.",
+    "CRM a medida",
+    "Marketing",
+    "Reporting"
+  ],
+  "ui": {
+    "en": {
+      "skip": "Skip to content"
+    },
+    "fr": {
+      "skip": "Aller au contenu"
+    },
+    "it": {
+      "skip": "Vai al contenuto"
+    },
+    "de": {
+      "skip": "Zum Inhalt springen"
+    },
+    "pt": {
+      "skip": "Ir para o conteúdo"
+    }
+  },
+  "scenes": {
+    "value": [
+      "Diagnóstico claro",
+      "Prioridades compartidas",
+      "Solución a medida",
+      "Revisión conjunta"
+    ],
+    "speed": [
+      "Escuchar",
+      "Diseñar",
+      "Construir",
+      "Comprobar"
+    ],
+    "adapt": [
+      "Comercio",
+      "Restauración",
+      "Educación",
+      "Servicios",
+      "Industria",
+      "Logística"
+    ],
+    "team": [
+      "Estrategia",
+      "Tecnología",
+      "Operaciones",
+      "Datos"
+    ]
+  },
+  "faq": {
+    "es": [
+      "Preguntas sobre CAP",
+      [
+        [
+          "¿Qué tipo de consultoría ofrece CAP?",
+          "Consultoría general para pymes, pequeños negocios y startups, con especialización tecnológica. Trabajamos en estrategia, operaciones, marketing, datos, automatización y software a medida según las necesidades del proyecto."
+        ],
+        [
+          "¿Solo trabajáis en Barcelona?",
+          "El proyecto parte de Barcelona y atiende consultas de toda España y otros países. La colaboración puede organizarse a distancia y se acuerda directamente según cada caso."
+        ],
+        [
+          "¿Los servicios tienen coste?",
+          "Actualmente CAP es una iniciativa personal gratuita y sin ánimo de lucro, sin empresa constituida. La web no permite pagos ni suscripciones. Cualquier colaboración se concreta directamente antes de empezar."
+        ],
+        [
+          "¿Qué significa Service as a Software?",
+          "En CAP significa convertir una necesidad de tu negocio en software personalizado: una aplicación, un programa de gestión o una herramienta conectada con tus sistemas. El proyecto abarca diseño, desarrollo y puesta en marcha."
+        ]
+      ]
+    ],
+    "en": [
+      "Questions about CAP",
+      [
+        [
+          "What consulting does CAP offer?",
+          "General consulting for small businesses and startups, with a technology specialisation. We work on strategy, operations, marketing, data, automation and custom software according to project needs."
+        ],
+        [
+          "Do you only work in Barcelona?",
+          "The project is based in Barcelona and handles enquiries from Spain and other countries. Collaboration can take place remotely and is agreed directly for each case."
+        ],
+        [
+          "Is there a charge for services?",
+          "CAP is currently a free personal initiative with no profit motive or incorporated company. The website accepts no payments or subscriptions. Every collaboration is agreed directly before starting."
+        ],
+        [
+          "What does Service as a Software mean?",
+          "At CAP it means turning a business need into custom software: an application, a management program or a tool connected to your systems, including design, development and launch."
+        ]
+      ]
+    ],
+    "fr": [
+      "Questions sur CAP",
+      [
+        [
+          "Quel conseil propose CAP ?",
+          "Du conseil général pour PME et startups, spécialisé en technologie : stratégie, opérations, marketing, données, automatisation et logiciels sur mesure selon le projet."
+        ],
+        [
+          "Travaillez-vous uniquement à Barcelone ?",
+          "Le projet part de Barcelone et répond aux demandes de toute l’Espagne et d’autres pays. Une collaboration à distance peut être convenue directement."
+        ],
+        [
+          "Les services sont-ils payants ?",
+          "CAP est actuellement une initiative personnelle gratuite, sans but lucratif ni société constituée. Le site ne propose ni paiement ni abonnement. Toute collaboration est convenue avant de commencer."
+        ],
+        [
+          "Que signifie Service as a Software ?",
+          "Transformer un besoin de votre activité en logiciel personnalisé : application, outil de gestion ou outil connecté à vos systèmes, de la conception au développement et au lancement."
+        ]
+      ]
+    ],
+    "it": [
+      "Domande su CAP",
+      [
+        [
+          "Quale consulenza offre CAP?",
+          "Consulenza generale per PMI e startup, specializzata in tecnologia: strategia, operazioni, marketing, dati, automazione e software su misura secondo il progetto."
+        ],
+        [
+          "Lavorate solo a Barcellona?",
+          "Il progetto parte da Barcellona e risponde a richieste da tutta la Spagna e da altri paesi. La collaborazione a distanza viene concordata direttamente."
+        ],
+        [
+          "I servizi hanno un costo?",
+          "CAP è attualmente un’iniziativa personale gratuita, senza scopo di lucro o società costituita. Il sito non prevede pagamenti o abbonamenti. Ogni collaborazione si concorda prima di iniziare."
+        ],
+        [
+          "Cosa significa Service as a Software?",
+          "Trasformare un’esigenza aziendale in software personalizzato: applicazione, programma gestionale o strumento collegato ai tuoi sistemi, dalla progettazione allo sviluppo e al lancio."
+        ]
+      ]
+    ],
+    "de": [
+      "Fragen zu CAP",
+      [
+        [
+          "Welche Beratung bietet CAP?",
+          "Allgemeine Beratung für KMU und Startups mit technologischem Schwerpunkt: Strategie, Abläufe, Marketing, Daten, Automatisierung und individuelle Software je nach Projektbedarf."
+        ],
+        [
+          "Arbeiten Sie nur in Barcelona?",
+          "Das Projekt arbeitet aus Barcelona für Spanien und andere Länder. Eine Zusammenarbeit aus der Ferne kann direkt vereinbart werden."
+        ],
+        [
+          "Kosten die Leistungen etwas?",
+          "CAP ist derzeit eine kostenlose persönliche Initiative ohne Gewinnerzielungsabsicht und ohne gegründetes Unternehmen. Es gibt keine Zahlungen oder Abonnements auf der Website. Jede Zusammenarbeit wird vorab vereinbart."
+        ],
+        [
+          "Was bedeutet Service as a Software?",
+          "Ein geschäftliches Bedürfnis wird in individuelle Software umgesetzt: eine App, ein Verwaltungsprogramm oder ein mit Ihren Systemen verbundenes Werkzeug, einschließlich Gestaltung, Entwicklung und Einführung."
+        ]
+      ]
+    ],
+    "pt": [
+      "Perguntas sobre a CAP",
+      [
+        [
+          "Que consultoria oferece a CAP?",
+          "Consultoria geral para PME e startups, especializada em tecnologia: estratégia, operações, marketing, dados, automação e software à medida conforme o projeto."
+        ],
+        [
+          "Trabalham apenas em Barcelona?",
+          "O projeto parte de Barcelona e atende consultas de toda a Espanha e de outros países. A colaboração à distância pode ser acordada diretamente."
+        ],
+        [
+          "Os serviços têm custo?",
+          "A CAP é atualmente uma iniciativa pessoal gratuita, sem fins lucrativos e sem empresa constituída. O site não permite pagamentos nem subscrições. Cada colaboração é acordada antes de começar."
+        ],
+        [
+          "O que significa Service as a Software?",
+          "Transformar uma necessidade do negócio em software personalizado: aplicação, programa de gestão ou ferramenta ligada aos seus sistemas, incluindo design, desenvolvimento e lançamento."
+        ]
+      ]
+    ]
+  }
+}

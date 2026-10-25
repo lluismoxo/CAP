@@ -1,7 +1,7 @@
 -- CAP — límites de longitud en `clientes_web`.
 --
--- Por qué: la política RLS permite INSERT anónimo (lo necesita el formulario
--- de la web), pero las columnas son `text` sin longitud máxima. En la auditoría
+-- Histórico: la política RLS permitía INSERT anónimo (el antiguo formulario
+-- de la web lo usaba), pero las columnas son `text` sin longitud máxima. En la auditoría
 -- del 31-08-2026 se comprobó que se puede insertar un campo de 100.000
 -- caracteres con la clave publishable, que es pública por diseño.
 --
@@ -12,10 +12,7 @@
 -- Cómo aplicarlo: Supabase → SQL Editor → pegar y ejecutar.
 -- Es idempotente: se puede lanzar varias veces sin problema.
 
--- 1. Limpiar la fila de prueba que dejó la auditoría (nombre de 100.000 'A').
---    Se borra solo esa: filtra por longitud, no por contenido parcial.
-delete from public.clientes_web
-where length(nombre_contacto) > 500;
+-- No eliminar registros como parte de una migración de restricciones.
 
 -- 2. Límites de longitud. Holgados para cualquier envío legítimo y alineados
 --    con los `maxlength` del formulario.
