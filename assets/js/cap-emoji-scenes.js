@@ -178,7 +178,7 @@
     root.style.cssText += ';position:relative;pointer-events:auto;min-height:360px;display:flex;flex-direction:column;gap:30px;justify-content:center';
     var biz = [
       { l: 'Retail', mods: ['Pedidos en una sola bandeja', 'Avisos de stock', 'Asistente en WhatsApp', 'Facturas archivadas solas', 'Peticiones de reseña', 'Resumen de ventas cada mañana'] },
-      { l: 'Restaurante', mods: ['Reservas sin llamadas', 'Respuestas fuera de horario', 'Planificación de turnos', 'Pedidos a proveedores', 'Reseñas pedidas en el momento justo', 'Comensales de un vistazo'] },
+      { l: 'Restaurante', mods: ['Pedidos en una sola vista', 'Respuestas fuera de horario', 'Planificación de turnos', 'Pedidos a proveedores', 'Costes por plato', 'Comensales de un vistazo'] },
       { l: 'Gimnasio', mods: ['Pruebas con seguimiento', 'Socios en riesgo detectados', 'Dudas de clases resueltas', 'Cambios de horario avisados', 'Pagos fallidos reclamados', 'Retención en una sola vista'] },
       { l: 'Clínica', mods: ['Citas sin fricción', 'Recordatorios antes de cada visita', 'Historiales en un solo sitio', 'Primeras dudas filtradas', 'Papeleo de seguros', 'Ocupación por sala'] },
       { l: 'Logística', mods: ['Rutas planificadas', 'Entregas con seguimiento', 'Clientes informados', 'Albaranes archivados', 'Incidencias escaladas', 'Flota en un solo panel'] }
